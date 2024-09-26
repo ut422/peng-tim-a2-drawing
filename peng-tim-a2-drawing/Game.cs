@@ -76,9 +76,6 @@ namespace Game10003
             Draw.Circle(faceX + 50, faceY + 60, 15); // mouth part 2
             Draw.Circle(faceX - 20, faceY + 90, 15); // mouth part 3
             Draw.Circle(faceX + 20, faceY + 90, 15); // mouth part 4
-
-
-
             
         }
     }
