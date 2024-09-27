@@ -76,7 +76,7 @@ namespace Game10003
             Draw.Circle(faceX + 50, faceY + 60, 15); // mouth part 2
             Draw.Circle(faceX - 20, faceY + 90, 15); // mouth part 3
             Draw.Circle(faceX + 20, faceY + 90, 15); // mouth part 4
-<<<<<<< HEAD
+
 
 
             // change the circle color to red if space is pressed
@@ -106,9 +106,6 @@ namespace Game10003
             Draw.FillColor = defaultColor;
             Draw.Circle(mouseX, mouseY, 50); // draw the circle at the mouse position
 
-=======
-            
->>>>>>> 92b65a2c0f0bf8f06705bb4d5fb8b553522553a6
         }
     }
 }
