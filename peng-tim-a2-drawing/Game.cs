@@ -79,7 +79,33 @@ namespace Game10003
 
 
 
-            
+            // change the circle color to red if space is pressed
+            if (Input.IsKeyboardKeyDown(KeyboardInput.Space))
+            {
+                defaultColor = Color.Red; // changes the circle to red when space is pressed
+                Window.SetSize(700, 500); // shrink window size when red                
+            }
+            else
+            {
+                // change the circle color back to black if space is not pressed
+                defaultColor = black;
+
+                // check if the "R" key is pressed to set the window size to 100x100
+                if (Input.IsKeyboardKeyDown(KeyboardInput.R))
+                {
+                    Window.SetSize(600, 400); // set the window size to 600x400 when "R" is pressed
+                    defaultColor = Color.Green; // changes the circle to green when "R" is pressed
+                }
+                else
+                {
+                    Window.SetSize(800, 600); // restore to original size if neither condition is met
+                }
+            }
+
+            // draw the main circle with the current color
+            Draw.FillColor = defaultColor;
+            Draw.Circle(mouseX, mouseY, 50); // draw the circle at the mouse position
+
         }
     }
 }
