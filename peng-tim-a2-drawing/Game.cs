@@ -59,23 +59,24 @@ namespace Game10003
                 smileyfacedefaultColor = Color.White; // changes to black on left click
             }
 
-            // Draw the face
+            // draw the face
             Draw.FillColor = smileyfacedefaultColor; // fills the color for the face
             Draw.Circle(faceX - 0, faceY - 0, 150); // draws the face
 
-            // Draw the eyes (two smaller circles)
+            // draw the eyes (two smaller circles)
             Draw.FillColor = Color.White; // white for the eyes
             Draw.LineColor = Color.White; // white outline
             Draw.Circle(faceX - 35, faceY - 20, 15); // left eye
             Draw.Circle(faceX + 35, faceY - 20, 15); // right eye
 
-            // Draw the mouth (using white circles)
+            // draw the mouth (using white circles)
             Draw.FillColor = Color.White; // white for the mouth
             Draw.LineColor = Color.White; // white outline for mouth
             Draw.Circle(faceX - 50, faceY + 60, 15); // mouth part 1
             Draw.Circle(faceX + 50, faceY + 60, 15); // mouth part 2
             Draw.Circle(faceX - 20, faceY + 90, 15); // mouth part 3
             Draw.Circle(faceX + 20, faceY + 90, 15); // mouth part 4
+<<<<<<< HEAD
 
 
             // change the circle color to red if space is pressed
@@ -105,6 +106,9 @@ namespace Game10003
             Draw.FillColor = defaultColor;
             Draw.Circle(mouseX, mouseY, 50); // draw the circle at the mouse position
 
+=======
+            
+>>>>>>> 92b65a2c0f0bf8f06705bb4d5fb8b553522553a6
         }
     }
 }
